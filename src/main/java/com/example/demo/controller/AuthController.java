@@ -32,8 +32,8 @@ public class AuthController {
         this.jwtTokenServices = jwtTokenServices;
     }
 
-    @PostMapping("/singin")
-    public ResponseEntity singin(@RequestBody UserCredentials data) {
+    @PostMapping("/signin")
+    public ResponseEntity signin(@RequestBody UserCredentials data) {
         try {
             String username = data.getUsername();
             Authentication authentication = authenticationManager
